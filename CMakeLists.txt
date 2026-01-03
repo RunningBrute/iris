@@ -13,6 +13,11 @@ add_executable(iris
     src/main.cpp
 )
 
+target_include_directories(iris
+    PRIVATE
+        inc
+)
+
 if (MSVC)
     target_compile_options(iris PRIVATE /W4 /permissive-)
 else()
