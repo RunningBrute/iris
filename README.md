@@ -8,6 +8,12 @@ The project focuses on building a clean, explicit concurrency model using C++20 
 
 The initial scope of the project is offline processing of locally stored FIT files, with the possibility to support future integration with remote data sources such as Garmin Connect.
 
+### Name Origin
+
+The name *iris* is inspired by the Greek goddess Iris, the messenger of the gods.
+
+In mythology, Iris served as a link between different realms, symbolizing communication, transition, and information flow. This aligns closely with the core idea of the project: moving data through clearly defined stages of ingestion, transformation, and analysis without blocking execution.
+
 ## Scope
 
 ## Architecture (High Level)
