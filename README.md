@@ -27,3 +27,21 @@ In mythology, Iris served as a link between different realms, symbolizing commun
 ## Repository Structure
 
 ## Build
+
+Iris uses CMake and requires a C++20 compiler f.e. MSVC
+
+### Requirements
+- cmake
+- ninja
+- MSVC
+
+### Build (Windows, Ninja)
+
+From the repository root:
+
+```bash
+cmake -S . -B build -G Ninja
+cmake --build build
+```
+
+The resulting executable will be available in the build/ directory.
