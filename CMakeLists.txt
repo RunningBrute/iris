@@ -18,6 +18,23 @@ target_include_directories(iris
         inc
 )
 
+add_library(garmin_fit
+    vendor/garmin/fit/src/fit.cpp
+    vendor/garmin/fit/src/fit_decode.cpp
+    vendor/garmin/fit/src/fit_mesg.cpp
+    vendor/garmin/fit/src/fit_crc.cpp
+)
+
+target_include_directories(garmin_fit
+    PUBLIC
+        vendor/garmin/fit/include
+)
+
+target_link_libraries(iris
+    PRIVATE
+        garmin_fit
+)
+
 if (MSVC)
     target_compile_options(iris PRIVATE /W4 /permissive-)
 else()

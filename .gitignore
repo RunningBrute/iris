@@ -1,0 +1,58 @@
+# Build directories
+/build/
+/build-*/
+/out/
+/cmake-build-*/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+compile_commands.json
+
+# Ninja / Make
+.ninja_deps
+.ninja_log
+Makefile
+
+# Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Libraries
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+
+# Debug / profiling
+*.pdb
+*.prof
+*.gcda
+*.gcno
+*.gcov
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS / Environment
+.DS_Store
+Thumbs.db
+
+# Termux / Android
+.termux/
+.cache/
+*.log
+
+# FIT data files (optional, recommended)
+*.fit
