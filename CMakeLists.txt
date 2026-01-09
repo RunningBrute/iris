@@ -18,11 +18,12 @@ target_include_directories(iris
         inc
 )
 
+file(GLOB GARMIN_FIT_SOURCES
+    vendor/garmin/fit/src/*.cpp
+)
+
 add_library(garmin_fit
-    vendor/garmin/fit/src/fit.cpp
-    vendor/garmin/fit/src/fit_decode.cpp
-    vendor/garmin/fit/src/fit_mesg.cpp
-    vendor/garmin/fit/src/fit_crc.cpp
+    ${GARMIN_FIT_SOURCES}
 )
 
 target_include_directories(garmin_fit
