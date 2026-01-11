@@ -30,6 +30,12 @@ The SDK is included directly in the repository as a vendored dependency under `v
 
 ## Repository Structure
 
+The repository is organized to clearly separate core application logic, third-party dependencies, and build artifacts.
+
+The `vendor/` directory contains third-party code that is built as part of the project. Vendoring is used intentionally to ensure deterministic builds and full control over dependencies.
+
+Build artifacts (e.g. `build/`) and test data files are excluded from version control.
+
 ## Build
 
 Iris uses CMake and requires a C++20 compiler f.e. MSVC
