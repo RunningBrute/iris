@@ -24,6 +24,10 @@ In mythology, Iris served as a link between different realms, symbolizing commun
 
 ## FIT Processing
 
+Iris uses the official Garmin FIT SDK (C++ implementation) for decoding and interpreting FIT activity files.
+
+The SDK is included directly in the repository as a vendored dependency under `vendor/garmin/fit`. This approach was chosen to ensure full control over the build process, avoid external runtime dependencies, and allow development on environments with limited tooling (e.g. Termux).
+
 ## Repository Structure
 
 ## Build
