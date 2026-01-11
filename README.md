@@ -32,6 +32,7 @@ The SDK is included directly in the repository as a vendored dependency under `v
 
 The repository is organized to clearly separate core application logic, third-party dependencies, and build artifacts.
 
+```
 iris/
 ├─ src/                    # Application source code
 │  └─ main.cpp             # Temporary entry point / experiments
@@ -51,6 +52,7 @@ iris/
 ├─ CMakeLists.txt          # Project build configuration
 ├─ README.md               # Project documentation
 └─ .gitignore              # Git ignore rules
+```
 
 The `vendor/` directory contains third-party code that is built as part of the project. Vendoring is used intentionally to ensure deterministic builds and full control over dependencies.
 
