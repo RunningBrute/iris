@@ -46,6 +46,8 @@ iris/
 │        ├─ include/       # FIT SDK headers
 │        └─ src/           # FIT SDK source files
 │
+├─ tests/                  # GoogleTest files
+|
 ├─ data/                   # Local test data
 │  └─ *.fit                # Sample FIT activity files
 │
